@@ -1,0 +1,136 @@
+/* ************************************************************************************************************** */
+                                                    /* General CSS */
+/* ************************************************************************************************************** */
+
+p{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.body{
+    background: url(./bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.content{
+    margin: 200px;
+    align-items: center;
+    position:absolute;
+    margin-left: 25%;
+    display: flex;
+}
+/* ************************************************************************************************************** */
+                                                    /* CARD CSS */
+/* ************************************************************************************************************** */
+
+
+.left{
+    text-align: center;
+    background-color:  #ffffff;
+    padding: 40px;
+}
+.left input{
+    height: 30px;
+    width: 400px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+    margin: 5px;
+    border: 2px solid #555;
+    border-radius: 3px;
+}
+.handles{
+    display: flex;
+}
+.left button{
+    height: 40px;
+    width: 150px;
+    background-color:  #032d35;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 0px;
+}
+.left button:hover{
+    background-color:#ffffff;
+    color: #48a8c0;
+    border: 2px solid #48a8c0;
+}
+
+.right{
+    background-color:  #032d35;
+    color: #ffffff;
+    padding: 115px;
+}
+.right button{
+    height: 40px;
+    width: 150px;
+    background-color:  #48a8c0;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+}
+.right button:hover{
+    background-color:#ffffff;
+    color: #032d35;
+}
+
+/* ************************************************************************************************************** */
+                                                    /*  MEDIA QUERIES  */
+/* ************************************************************************************************************** */
+
+
+@media (max-width:700px) {
+    .nav{
+        width: auto;
+        height: auto;
+        display: block;
+        padding: 0;
+    }
+    .nav a{
+        font-size: 12px;
+        text-align: center;
+        width: auto;
+    }
+    .content {
+        display: block;
+    }
+    .right{
+        margin: 0;
+        width: auto;
+    }
+    .left{
+        margin: 0;
+        width: auto;
+    }
+    .left input{
+        width: 200px;
+    }
+    form{
+        width: auto;
+    }
+    .right input{
+        width: auto;
+        margin: 5px;
+    }
+    .left button{
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        margin: 0;
+    }
+    .right button{
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+
+

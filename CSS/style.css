@@ -1,0 +1,188 @@
+/* ************************************************************************************************************** */
+                                                    /* General CSS */
+/* ************************************************************************************************************** */
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: rgb(243, 171, 14);
+}
+ul li {
+    list-style-type: none;
+}
+
+/* ************************************************************************************************************** */
+                                                    /* MAIN Body CSS */
+/* ************************************************************************************************************** */
+.main-body{
+    background: url(./background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+/* ************************************************************************************************************** */
+                                                /* NAVIGATION BAR CSS */
+/* ************************************************************************************************************** */
+
+.nav-bar {
+    background: #298ba4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    box-shadow: 2px 3px 8px rgb(1, 39, 56);
+    position: fixed;
+    text-overflow: ellipsis;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+.nav-bar-list{
+    display: flex;
+    align-items: right;
+    margin-right: 150px;
+    margin-left: 500px;
+    font-size:20px;
+    right: 2%;
+}
+.nav-item {
+    margin-left: 5rem;
+    float: right;
+}
+.nav-bar-list a{
+    font-weight: 600;
+    color: rgb(2, 65, 87);
+}
+.nav-bar-list a:hover{
+    color:rgb(243, 171, 14);
+}
+
+/* ************************************************************************************************************** */
+                                                /* MAIN TEXT IN BODY CSS */
+/* ************************************************************************************************************** */
+.text{
+    padding-top: 150px;
+    justify-content: space-between;
+    gap: 1.9rem;
+    font-size: 4em;
+    float: right;
+    margin-right: 150px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #48a8c0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text2{
+    padding-left: 30px;
+}
+
+/* ************************************************************************************************************** */
+                                                /* BUTTONS AND ITS TEXT */
+/* ************************************************************************************************************** */
+.sub-text{
+    padding-top: 450px;
+    text-align: right;
+    margin-right: 150px;
+}
+.btn{
+    text-transform: capitalize;
+    background-color: #032d35;
+    border: none;
+    font-weight: bold;
+    border-radius: 2em;
+    width: 10em;
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    background-color: #298ba4;
+    border: 2px solid #032d35;
+}
+
+/* ************************************************************************************************************** */
+                                                    /* ABOUT SECTION CSS */
+/* ************************************************************************************************************** */
+.row{
+    display: flex;
+}
+.r1{
+    width: 70%;
+}
+.r1 img{
+    width: 100%;
+    margin-top: 10%;
+
+}
+.r2{
+    margin-right: 30px;
+}
+.about{
+    background: url(./bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: sans-serif; 
+    height: 100vh;
+}
+.heading{
+    margin: 150px 0 0 80px;
+}
+.about img{
+    margin-top: 150px;
+    height: 80%;
+}
+.about p{
+    margin: 20px 0 0 80px;
+    font-size: 20px;
+}
+
+/* ************************************************************************************************************** */
+                                                    /* FOOTER SECTION CSS */
+/* ************************************************************************************************************** */
+footer{
+    background-color: rgb(1, 39, 56);
+    height: 35vh;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    color: #fff;
+}
+.logo-footer{
+    width: 120px;
+    height: 120px;
+    margin: 40px 0 0 100px;
+    cursor: pointer;
+    float: left;
+}
+.wn-items,
+.create-items,
+.right-items{
+    float: right;
+    margin: 20px 0 0 300px;
+    color:#48a8c0;
+}
+
+/* ************************************************************************************************************** */
+                                                    /* CREDITS SECTION CSS */
+/* ************************************************************************************************************** */
+.credits{
+    justify-content: space-evenly;
+    color: white;
+    background: black;
+    text-align: center;
+    padding-top: 10px;
+    height: 5vh;
+}
