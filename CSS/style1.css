@@ -1,222 +1,200 @@
-/* ************************************************************************************************************** */
-                                                    /* General CSS */
-/* ************************************************************************************************************** */
-body{
-    background: url(./bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-attachment: fixed;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
 }
-a{
-    text-decoration: none;
+body {
+  background: url(./bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  font-family: sans-serif;
 }
-a:active{
-    color: rgb(243, 171, 14);
+a {
+  text-decoration: none;
+}
+a:active {
+  color: rgb(243, 171, 14);
 }
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
-.head{
-    margin-top: 100px;
-    margin-left: 50px;
-    color: rgb(2, 65, 87);
+.head {
+  margin-top: 100px;
+  margin-left: 50px;
+  color: rgb(2, 65, 87);
 }
-
-/* ************************************************************************************************************** */
-                                                    /* About Section CSS */
-/* ************************************************************************************************************** */
-
-.row{
-    display: flex;
+.row {
+  display: flex;
 }
-.r1{
-    width: 60vw;
+.r1 {
+  width: 60vw;
 }
-.r1 img{
-    padding-top: 15%;
-    width: 90%;
+.r1 img {
+  padding-top: 15%;
+  width: 90%;
 }
-.r2{
-    margin-right: 60px;
-    width: 40vw
-} 
-.heading{
-    margin-top: 150px;
-}     
-
-/* ************************************************************************************************************** */
-                                                    /* Navigation Bar CSS */
-/* ************************************************************************************************************** */
-
+.r2 {
+  margin-right: 60px;
+  width: 40vw;
+}
+.heading {
+  margin-top: 150px;
+}
 .nav-bar {
-    background: #298ba4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    box-shadow: 2px 3px 8px rgb(1, 39, 56);
-    position: fixed;
-    text-overflow: ellipsis;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    height: 30px;
-    position: fixed;
+  background: #298ba4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 3px 8px rgb(1, 39, 56);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  position: fixed;
 }
-.nav-bar-list{
-    display: flex;
-    align-items: right;
-    margin-right: 150px;
-    margin-left: 500px;
-    font-size:20px;
-    right: 2%;
+.nav-bar-list {
+  display: flex;
+  align-items: right;
+  margin-right: 150px;
+  margin-left: 500px;
+  font-size: 20px;
+  right: 2%;
 }
 .nav-item {
-    margin-left: 5rem;
-    float: right;
+  margin-left: 5rem;
+  float: right;
 }
-.nav-bar-list a{
-    font-weight: 600;
-    color: rgb(2, 65, 87);
+.nav-bar-list a {
+  font-weight: 600;
+  color: rgb(2, 65, 87);
 }
-.nav-bar-list a:hover{
-    color:rgb(243, 171, 14);
+.nav-bar-list a:hover {
+  color: rgb(243, 171, 14);
 }
-
-
-/* ************************************************************************************************************** */
-                                                    /* SUPPORT TAB CSS */
-/* ************************************************************************************************************** */
-.support-form{
-    padding: 20px;
-    margin-left: 50px;
+.support-form {
+  padding: 20px;
+  margin-left: 50px;
 }
-.sup-text,.sup-number,.sup-email,select, .sup-textarea {
-    width: 25%;
-    padding: 12px;
-    margin: 10px;
-    border: 1px solid #298ba4;
-    border-radius: 4px;
-    resize: vertical;
-    outline: none;
+.sup-text,
+.sup-number,
+.sup-email,
+select,
+.sup-textarea {
+  width: 25%;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #298ba4;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
 }
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-} 
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 .sup-btn {
-    background: #298ba4;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    float: left;
-    margin-top: 120px;
-    margin-right: 20px;
+  background: #298ba4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  float: left;
+  margin-top: 120px;
+  margin-right: 20px;
 }
 .sup-btn:hover {
-    background-color: rgb(2, 65, 87);
-    border: 2px solid #fff;
+  background-color: rgb(2, 65, 87);
+  border: 2px solid #fff;
 }
-.sup-left{
-    float: left;
-    width: 25%;
-    margin-top: 20px;
+.sup-left {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
 }
-.sup-right{
-    float: right;
-    width: 75%;
-    margin-top: 2px;
+.sup-right {
+  float: right;
+  width: 75%;
+  margin-top: 2px;
 }
-
-/* ************************************************************************************************************** */
-                                                    /* MONEY TRANSFER TAB CSS */
-/* ************************************************************************************************************** */
-.mt-form h2{
-    text-align: center;
-    font-size: 30px;
-    color: rgb(2, 65, 87);
+.mt-form h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(2, 65, 87);
 }
-.acc_no{
-    width: 30%;
+.acc_no {
+  width: 30%;
 }
 
-.mt-table{
-    border: 1px solid #0000;
-    font-size: 20px;
-    margin-left: 25%;
+.mt-table {
+  border: 1px solid #0000;
+  font-size: 20px;
+  margin-left: 25%;
 }
-.mt-btn{
-    background-color: #032d35;
-    border-radius: 25px;
-    padding: 8px 15px;
-    margin: 30px ;
-    font-size: 20px;
-    width: 25%;
-    text-transform: uppercase;
-    font-weight: lighter;
-    transition: 1s;
-    color: #fff;
-    border: none;
+.mt-btn {
+  background-color: #032d35;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin: 30px;
+  font-size: 20px;
+  width: 25%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  transition: 1s;
+  color: #fff;
+  border: none;
 }
-.mt-btn:hover{
-    background: #298ba4;
-    border: 2px solid #032d35;
+.mt-btn:hover {
+  background: #298ba4;
+  border: 2px solid #032d35;
 }
 
-
-/* ************************************************************************************************************** */
-                                                    /* CUSTOMETRS TAB CSS */
-/* ************************************************************************************************************** */
-
-.container{
-    margin: 30px 150px 30px 150px;
+.container {
+  margin: 30px 150px 30px 150px;
 }
-.customers-table{
-    width: 100%;
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
+.customers-table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
 }
-th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-td{
-    padding: 20px;
+td {
+  padding: 20px;
 }
-th{
-    padding: 15px;
+th {
+  padding: 15px;
 }
-.table-head{
-    background: rgb(243, 171, 14);
+.table-head {
+  background: rgb(243, 171, 14);
 }
 tr:nth-child(even) {
-    background-color:rgb(2, 65, 87);
-    color: #fff;
+  background-color: rgb(2, 65, 87);
+  color: #fff;
 }
-
-/* ************************************************************************************************************** */
-                                                    /* Transaction CSS */
-/* ************************************************************************************************************** */
-.trans-btn{
-    background-color: #032d35;
-    border-radius: 25px;
-    padding: 8px 15px;
-    margin: 30px ;
-    font-size: 15px;
-    width: 25%;
-    font-weight: lighter;
-    transition: 1s;
-    color: #fff;
-    border: none;
+.trans-btn {
+  background-color: #032d35;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin: 30px;
+  font-size: 15px;
+  width: 25%;
+  font-weight: lighter;
+  transition: 1s;
+  color: #fff;
+  border: none;
 }
-.trans-btn:hover{
-    background: #298ba4;
-    border: 2px solid #032d35;
+.trans-btn:hover {
+  background: #298ba4;
+  border: 2px solid #032d35;
 }
